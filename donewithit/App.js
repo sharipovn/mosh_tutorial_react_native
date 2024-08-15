@@ -10,31 +10,20 @@ export default function App() {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-    <View
-      style={{
-        backgroundColor:"dodgerblue",
-        width:100,
-        height:100, 
-        padding:20,
-        paddingHorizontal:10,
-        paddingLeft:30
-      }}>
-      <View
+        <Text
         style={{
-          backgroundColor:"gold",
-          width:50,
-          height:50, 
-        }}>
-      </View>
-      </View>
-      <View
-        style={{
-          backgroundColor:"tomato",
-          width:100,
-          height:100, 
-          margin:20,
-        }}>
-      </View>
+          fontSize:30,
+          fontFamily: 'Courier',
+          fontStyle: 'italic',
+          fontWeight:'bold',
+          color:'tomato',
+          textTransform:'capitalize',
+          // textDecorationLine:'line-through'
+          textAlign: 'center',
+          lineHeight:25 //boshqa componenetalaga bunaqa style berib bo'lmaydi
+        }}
+        >I love React Native! This is my first React Native APP </Text>
     </View>
   );
 }
+
