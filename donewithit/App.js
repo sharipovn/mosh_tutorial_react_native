@@ -15,19 +15,26 @@ export default function App() {
         backgroundColor:"dodgerblue",
         width:100,
         height:100, 
-        shadowColor:"red",//only for ios
-        shadowOffset:{ width:50, height:50 },//only for ios
-        shadowOpacity:1,//only for ios
-        elevation:30,// for ios and android
-      }}></View>
+        padding:20,
+        paddingHorizontal:10,
+        paddingLeft:30
+      }}>
+      <View
+        style={{
+          backgroundColor:"gold",
+          width:50,
+          height:50, 
+        }}>
+      </View>
+      </View>
+      <View
+        style={{
+          backgroundColor:"tomato",
+          width:100,
+          height:100, 
+          margin:20,
+        }}>
+      </View>
     </View>
   );
 }
-
-
-// const styles = StyleSheet.create({
-//   container:{
-//     flex: 1,
-//     paddingTop:Platform.OS === "android" ? StatusBar.currentHeight : 0,
-//   }
-// })
