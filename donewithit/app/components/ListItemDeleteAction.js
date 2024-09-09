@@ -2,11 +2,13 @@ import React from 'react';
 import { View,StyleSheet } from 'react-native'
 import colors from '../config/colors'
 import {MaterialCommunityIcons} from '@expo/vector-icons'
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 
 
-function ListItemDeleteActions() {
+function ListItemDeleteAction({onPress}) {
     return (
+        <TouchableWithoutFeedback onPress={onPress}>
         <View style={styles.container}>
             <MaterialCommunityIcons
                 name="trash-can"
@@ -14,6 +16,7 @@ function ListItemDeleteActions() {
                 color={colors.white}
             />
         </View>
+        </TouchableWithoutFeedback>
     );
 }
 const styles = StyleSheet.create({
@@ -22,6 +25,7 @@ const styles = StyleSheet.create({
         width:70,
         justifyContent: 'center',
         alignItems: 'center',
+        height:'100%'
     }
 })
-export default ListItemDeleteActions;
+export default ListItemDeleteAction;
